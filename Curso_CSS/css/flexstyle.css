@@ -1,0 +1,68 @@
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background: slateblue;
+    border: 7px solid yellow;
+}
+
+.caja2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+
+/* Pseudo-Clases */
+
+.caja1:hover {
+    background-color: darkslateblue;
+    height: 300px;
+    width: 300px;
+    border: 3px solid red;
+    transition: all 3s;
+} /* Cuando se situa el mouse sobre el objeto */
+
+.unLink:link {
+    color: red;
+} /* Para cuando nunca se visitó un link */
+
+.unLink:visited {
+    color: violet;
+} /* Para cuando ya se visitó el link */
+
+.caja2:active {
+    background: blue;
+    width: 400px;
+    height: 50px;
+    transition: all 3s;
+} /* Al dejar clickeado el objeto */
+
+.unInput:focus {
+    background: white;
+    padding: 20px;
+} /* Al estar seleccionado el elemento */
+
+/* .caja4 b:lang(en) {
+    background: red;
+    padding: 20px;
+}  No se usa */
+
+.imagen {
+    margin: 25px;
+    width: 300px;
+    height: 500px;
+}
+
+.imagen img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;/*La imagen se ajusta al contenido*/
+    object-position: left;
+}
+
+/*Cambiar el cursor*/
+
+.imagen {
+    cursor: pointer;
+}
